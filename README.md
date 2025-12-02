@@ -61,5 +61,5 @@ The easiest way to run the application is using the included container orchestra
 
 3. **Access Services:**
 
-    Frontend Dashboard: http://localhost:5173
-    Backend Server: http://localhost:8000
+    - **Frontend Dashboard:** http://localhost:5173
+    - **Backend Server:** http://localhost:8000
