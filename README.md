@@ -1,7 +1,6 @@
 # 🇧🇷 Olist Sales Predictor: End-to-End ML System
 
 ![Dashboard Screenshot](./dashboard-screenshot.jpg)
-_(Place your screenshot here: `dashboard-screenshot.jpg`)_
 
 ## 📋 Overview
 
