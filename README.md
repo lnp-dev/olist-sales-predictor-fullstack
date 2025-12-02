@@ -40,29 +40,27 @@ The application follows a Microservices pattern:
 
 | Component           | Technology             | Role                      |
 | :------------------ | :--------------------- | :------------------------ |
-| **Language**        | Python 3.10+           | Core Logic & ML           |
-| **ML Library**      | XGBoost / Scikit-Learn | Predictive Modeling       |
-| **API Framework**   | FastAPI / Uvicorn      | REST API & Async Server   |
+| **Language** | Python 3.10+           | Core Logic & ML           |
+| **ML Library** | XGBoost / Scikit-Learn | Predictive Modeling       |
+| **API Framework** | FastAPI / Uvicorn      | REST API & Async Server   |
 | **Data Processing** | Pandas / NumPy         | Time Series Aggregation   |
-| **Frontend**        | React.js (Vite)        | User Interface            |
-| **Visualization**   | Recharts               | Data Plotting             |
-| **Serialization**   | Joblib                 | Model Artifact Management |
+| **Frontend** | React.js (Vite)        | User Interface            |
+| **Visualization** | Recharts               | Data Plotting             |
+| **Infrastructure** | Docker / Compose       | Containerization          |
+| **Serialization** | Joblib                 | Model Artifact Management |
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
-### Prerequisites
+### Docker (Recommended) 
 
-- Node.js & npm
-- Python 3.x
+The easiest way to run the application is using the included container orchestration. This spins up both the API and the Client in isolated environments.
 
-### 1. Backend Setup (Python)
+1. **Prerequisites:** Ensure Docker Desktop is installed and running.
+2. **Build and Run:**
+   ```bash
+   docker-compose up --build
 
-Navigate to the root directory:
+3. **Access Services:**
 
-```bash
-# Install dependencies
-pip install pandas numpy scikit-learn xgboost fastapi uvicorn joblib requests
-
-# Start the API server
-uvicorn app:app
-```
+    Frontend Dashboard: http://localhost:5173
+    Backend Server: http://localhost:8000
